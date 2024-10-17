@@ -35,7 +35,7 @@ const transactions = [
   { id: 7, name: 'Tinek Detstar T-Shirt', date: 'Jul 12th 2024', status: 'Completed', code: '0JWEJS7ISNC' },
 ]
 
-export function DashboardComponent() {
+export function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false)
 
   return (
@@ -131,7 +131,7 @@ export function DashboardComponent() {
         <div className="p-4 lg:p-8">
           <header className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 space-y-4 lg:space-y-0">
             <div className="w-full lg:w-auto">
-              <Select defaultValue="sales-admin" className="w-full lg:w-auto">
+              <Select defaultValue="sales-admin" >
                 <option value="sales-admin">Sales Admin</option>
               </Select>
             </div>
@@ -244,7 +244,7 @@ export function DashboardComponent() {
               </div>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <span  className="w-32 text-sm text-gray-500">Product Launched</span>
+                  <span className="w-32 text-sm text-gray-500">Product Launched</span>
                   <div className="flex-1 h-4 bg-[#5AE48A] rounded"></div>
                   <span className="ml-2 text-sm font-semibold">(233)</span>
                 </div>
@@ -267,7 +267,7 @@ export function DashboardComponent() {
       {/* Right Sidebar */}
       <div className="w-full lg:w-80 bg-white p-6 overflow-y-auto">
         <div className="mb-6">
-          <Select defaultValue="january-may-2024" className="w-full">
+          <Select defaultValue="january-may-2024" >
             <option value="january-may-2024">January 2024 - May 2024</option>
           </Select>
         </div>
